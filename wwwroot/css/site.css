@@ -20,3 +20,79 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.custom-title {
+  font-size: 3rem; /* Aumenta el tamaño de la fuente */
+  font-weight: 800; /* Muy en negrita */
+  color: #838080; /* Color llamativo (naranja) */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  text-shadow: 4px 4px 6px rgba(8, 49, 252, 0.671); /* Sombra de texto */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  background: linear-gradient(90deg, #007bff, #e80f0fd6); /* Degradado en el fondo del texto */
+  -webkit-background-clip: text; /* Hace que el fondo sea solo del texto */
+  color: transparent; /* Hace el texto en sí transparente para mostrar el degradado */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid #f5f5f5; /* Borde alrededor del texto */
+}
+
+.custom-title:hover {
+  color: #ffffff; /* Cambiar color del texto al pasar el ratón */
+  background: #007bff; /* Fondo sólido al pasar el ratón */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Aumentar la sombra al pasar el ratón */
+  transform: scale(1.05); /* Agrandar ligeramente al pasar el ratón */
+  transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+.custom-btn {
+  background-color: #b8b8b261; /* Color de fondo amarillo */
+  color: #3e3e3d; /* Color del texto rojo */
+  font-weight: 500;
+  font-weight: bold; /* Texto en negrita */
+  border: 2px solid #ffffffd6; /* Borde rojo */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+.custom-btn:hover {
+  background-color: #007bff; /* Cambia el fondo a rojo al pasar el ratón */
+  font-weight: 900;
+  color: #ffffff; /* Cambia el texto a amarillo al pasar el ratón */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* Aumenta la sombra al pasar el ratón */
+  transform: scale(1.05); /* Agranda ligeramente al pasar el ratón */
+}
+
+.custom-btn-small {
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 6px; /* Bordes redondeados */
+  padding: 8px 16px; /* Espaciado interno más pequeño */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+}
+
+.custom-btn-small:hover {
+  transform: scale(1.05); /* Agranda ligeramente al pasar el ratón */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el ratón */
+}
+
+/* Colores específicos para cada botón */
+.btn-details {
+  background-color: #007bff; /* Azul para Details */
+  color: white;
+}
+
+.btn-edit {
+  background-color: #ffc107; /* Amarillo para Edit */
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545; /* Rojo para Delete */
+  color: white;
+}
