@@ -1,3 +1,17 @@
-<div class="text-center">
-    <h1 class="display-4">this is the DELETE view</h1>
+@model DocumentType;
+<h1>@ViewData["Title"]</h1>
+@{
+    ViewData["Title"] = "Confirmar Eliminación";
+}
+
+
+<div class="alert alert-warning">
+    <h4>¿Estás seguro de que quieres eliminar el tipo de documento "@Model.Name"?</h4>
+    <p>Esta acción no se puede deshacer.</p>
 </div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
