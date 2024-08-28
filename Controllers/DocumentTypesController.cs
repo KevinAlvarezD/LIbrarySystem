@@ -84,7 +84,23 @@ public class DocumentTypesController : Controller
         {
             return NotFound();
         }
+        return View(documentTypeFound);
+    }
 
+    [HttpPost("delete/{id}")]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        var result = CheckExist(id);
+        if (result == false)
+        {
+            return NotFound();
+        }
+
+        var documentTypeFound = await _context.DocumentTypes.FindAsync(id);
+        if (documentTypeFound == null)
+        {
+            return NotFound();
+        }
         _context.DocumentTypes.Remove(documentTypeFound);
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
